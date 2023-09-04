@@ -4,25 +4,26 @@
 
 body {
   font-family: 'Roboto Mono', monospace;
- // background-color: #c2e6e8;
+  background-color: #c2e6e8;
 }
 
 #root {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
 
 button,
 button:active {
-  background-color: rgb(234,178,156);
+  background-color: rgb(220,180,172); /*color rosita*/
   border: none;
-  width: 42px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
   text-align: center;
-  box-shadow: 0.2em 0.2em rgb(194, 91, 44);
-  -webkit-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
+  box-shadow: 0.2em 0.2em rgb(220, 180, 172);
+  -webkit-box-shadow: 0.2em 0.2em rgb(193, 139, 128);
   -moz-box-shadow: 0.2em 0.2em rgb(194, 91, 44);
 }
 
@@ -35,27 +36,27 @@ button:focus {
 
 /* Clock Body */
 
-.clock-container {
-  background-color: rgb(240, 240, 190); 
-  width: 350px;
+.clock-container { /*contenedor*/
+  background-color: rgb(252, 232, 228); 
+  width: 290px;
   border-radius: 20px;
-  padding: 30px;
-  box-shadow: 10px 10px sienna;
+  padding: 10px;
+  box-shadow: 10px 10px rgb(220,180,172);
 }
 
 /* Display + Stop/Start/Reset Controls */
 
-#time-left {
-  font-size: 70px;
+#time-left { /*display*/
+  font-size: 50px; 
   text-align: center;
-  background-color: rgb(150,180,175);
-  padding: 20px;
+  background-color: rgb(220,180,172); /*color rosita*/
+  padding: 3px;
   border-radius: 20px;
-  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+  box-shadow: 3px 3px rgb(207, 137, 130) inset; /*rosa oscuro*/
 }
 
 #display-controls {
-  margin: 10px 0;
+  margin: 10px 0; /*espacio entre display y boton sesion*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -63,18 +64,18 @@ button:focus {
 }
 
 #timer-label {
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   padding-top: 2px;
-  background-color: rgb(150,180,175);
+  background-color: rgb(220,180,172); /*color boton sesion*/
   border-radius: 10px;
-  height: 40px;
+  height: 30px;
   flex: 2;
-  box-shadow: 3px 3px rgb(121, 145, 141) inset;
+  box-shadow: 3px 3px rgb(207, 137, 130) inset;
 }
 
 #timer-ssr {
-  flex: 1;
+  flex: 1.2;
   margin-left: 30px;
   display: flex;
   justify-content: space-between;
@@ -94,18 +95,18 @@ button:focus {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 140px;
-  height:60px;
+  width: 120px;
+  height:50px;
 }
 
 .break-container, 
 .session-container {
   text-align: center;
 /*   display: inline-block; */
-  border: 2px solid rgb(234,178,156);
-  padding: 10px;
-  border-radius: 10px;
-  width: 48%;
+  border: 2px solid rgb(207, 137, 130);
+  padding: px;
+  border-radius: 10px; /*redondeado*/
+  width: 47%;
 }
 
 .timer-length {
@@ -114,5 +115,5 @@ button:focus {
 
 .break-container,
 .inc-arrow {
-  margin-right: 12px;
+  margin-right: 12px; /*espacio entre break y session*/
 }
